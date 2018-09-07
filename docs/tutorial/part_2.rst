@@ -319,8 +319,12 @@ ChatConsumer add its channel to a group whose name is based on the room name.
 That will allow ChatConsumers to transmit messages to all other ChatConsumers in
 the same room.
 
-We will use a channel layer that uses Redis as its backing store. To start a
-Redis server on port 6379, run the following command::
+We will use a channel layer that uses Redis as its backing store. 
+Start docker service run the following command::
+
+    $ systemctl start docker
+    
+To start a Redis server on port 6379, run the following command::
 
     $ docker run -p 6379:6379 -d redis:2.8
 
